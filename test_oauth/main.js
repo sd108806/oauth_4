@@ -8,7 +8,7 @@ get_oauth();
 
 
 
-var obj_event;
+var obj_event=new Object();
 get_event( obj_event );
 
 document.write('obj_event.events[0].node  ' + obj_event.events[0].node+ '<br/>');
