@@ -1,6 +1,6 @@
 
 
-function get_event(var obj)
+function get_event(obj)
 {
 
 
