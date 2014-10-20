@@ -1,6 +1,6 @@
 
 
-function get_event()
+function get_event(input_path)
 {
 
 
@@ -22,7 +22,7 @@ myoauth.signature=myoauth.consumer.secret+'%26' ;
 
 myoauth.timestamp=myoauth.getTimeStamp();
 
-var my_event_string='https://bitbucket.org/api/1.0/repositories/sd108806/bb/events/?'
+var my_event_string='https://bitbucket.org/api/1.0/repositories/'+ input_path +'/events/?'
 +"oauth_signature_method="+myoauth.signature_method+"&"
 +'oauth_nonce='+myoauth.nonce+'&'
 +"oauth_timestamp="+myoauth.timestamp+"&"

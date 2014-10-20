@@ -1,7 +1,7 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+    <head>
+       <meta charset="utf-8">
 
 <meta http-equiv="Access-Control-Allow-Origin" content="www.bitbucket.org">
 <script type="text/javascript" src="get_oauth.js"></script>
@@ -35,34 +35,65 @@ $( document ).bind( "mobileinit", function() {
    $.mobile.allowCrossDomainPages = true; 
 }); 
  </script>
+	   
+	   
+	   
+	   
+	   
+		
+		<title>no title file</title>
+		</head>
+    
+	
+	
+	<body>
+       <p style="font-size:10pt;cursor:hand" >Git Touch Viewer can visualize Bitbucket and GitHub repository.<br>
+	   For Bitbucket, public and private repository can e visualized. <br>
+	    For GitHub, only public repository can be visualized, and GitHub is a alpha version. <br>
+	    Please authorize first, then choose repository and get data.  </p>
+ 
+<br>
+<br>
+
+ <input type="radio" name="picno" value="1">bitbucket
+
+ <input type="radio" name="picno" value="2">github
+ 
+ <br>
+ 
+ Repository:  <input id="PointNameText" type="text" size=50  class="inputField" onFocus="this.value=null" />
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+<input type=button value="Get Data" id="getdata">
+ <br>
+ <br>
+ <br>
+ 
+ <input type=button value="Use Cached Data" onClick="b()">
  
  
-<!-- <meta http-equiv="Content-Type" content='text/html'; charset='gb2312' >
- -->
-<!-- <meta http-equiv="Content-Type" content="application/json"> -->
+ 
+ <script type="text/javascript">
+            
 
-
-
-<title>no title file</title>
-
-<button id="mybtn_input_oauth"> click me_input_oauth </button>
-
-<button id="mybtn_callback"> click me_callback </button>
-
-</head>
-
-<body>
-
-<script>
-document.getElementById("mybtn_input_oauth").onclick= function(){main()};
-</script>
-
-<script>
-document.write("this is not end   ");
-</script>
-
-
-
-
-</body>
-</html>
+$(document).ready(function(){
+  $("#getdata").click(function(){
+ var input_path= $("#PointNameText").val() ;
+ // document.write('input_path  '  +  input_path+ '<br/>');
+  
+  main(input_path );
+  
+  
+  });
+ 
+});			
+			
+ </script>
+			  	 
+			 
+			 
+    </body>
+</html> 
