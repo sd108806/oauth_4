@@ -1,6 +1,6 @@
 
 
-function get_event(obj)
+function get_event()
 {
 
 
@@ -50,7 +50,7 @@ document.write('request is success  ' + '<br/>');
 
 document.write('xmldoc  ' + xmldoc  +'<br/>'+'<br/>'+'<br/>');
 
- obj = eval('(' + xmldoc + ')'); ;
+ var obj = eval('(' + xmldoc + ')'); ;
 
 
 document.write('obj.count  ' +'<br/>'+ obj.count+ '<br/>'+ '<br/>'+ '<br/>');
@@ -64,7 +64,7 @@ document.write('obj.events[0].description.commits[0].description ' + obj.events[
 
 
 
-
+return  obj;
 
 
 }

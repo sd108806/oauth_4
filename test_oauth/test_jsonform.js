@@ -1,10 +1,10 @@
 
 
 
-function test_jsonform()
+function test_jsonform( )
 {
 
-var newobj= {
+ var newobj= {
 'count':10,
 
 'events':[
@@ -27,6 +27,13 @@ document.write('newobj.events[0].node  ' + newobj.events[0].node +'<br/>'+'<br/>
 
 document.write('newobj.events[1].node  ' + newobj.events[1].node +'<br/>'+'<br/>');
 
+var student={
+id:123,
+age:20,
 
+}
+student.name="no idea";
+
+return newobj;
 
 }
